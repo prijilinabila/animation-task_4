@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#container {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#bg-img {
+    position: absolute;
+    transform: scale(1.5);
+    left: 114px;
+}
+#screen-1 {
+    position: absolute;
+    width: 299px;
+    height: 147px;
+    opacity: 0.8;
+    left: -79px;
+    top: -223px;
+    border: 2px solid white;
+    background-color: #041638;
+    transform: rotate(-39deg);
+}
+#screen-2 {
+    position: absolute;
+    width: 299px;
+    opacity: 0.8;
+    left: 129px;
+    bottom: -183px;
+    border: 2px solid white;
+    background-color: #041638;
+    height: 147px;
+    transform: rotate(-39deg);
+}
+#text-1 {
+
+    transition: all 3s;
+    position: absolute;
+    font-family: fantasy;
+    top: 4px;
+    font-size: 30px;
+    transform: translate(-131px);
+    color: white;
+}
+#text-1.text {
+    animation: text-anim 0.7s;
+    transform: translate(13px)
+}
+
+@keyframes text-anim {
+    0% {
+        transform: translate(-131px);
+    }
+
+    90% {
+        transform: translate(22px);
+    }
+
+    100% {
+        transform: translate(13px);
+    }
+}
+
+#text-2 {
+    position: absolute;
+    font-family: fantasy;
+    font-size: 30px;
+    top: 33px;
+    transform: translate(-131px);
+    color: white;
+}
+#text-2.text1 {
+    animation: text-anim1 0.7s;
+    transform: translate(13px);
+}
+
+@keyframes text-anim1 {
+    0% {
+        transform: translate(-131px);
+    }
+
+    90% {
+        transform: translate(22px);
+    }
+
+    100% {
+        transform: translate(13px);
+    }
+}
+
+#text-3 {
+    position: absolute;
+    font-family:sans-serif;
+    font-size: 14px;
+    top: 72px;
+    left: 14px;
+    opacity: 0;
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    transform: translateY(-25px);
+}
+
+#button {
+    position: absolute;
+    bottom: 26px;
+    height: 28px;
+    right: 13px;
+    width: 0;
+}
+#btn-text {
+    position: absolute;
+    right: 0px;
+    bottom: 18px;
+    height: 28px;
+    font-family: sans-serif;
+    font-size: 11px;
+    width: 85px;
+    transform-origin: right;
+    transform: scale(0, 1);
+}
+#text-4 {
+    position: absolute;
+    bottom: 4px;
+    right: 8px;
+    font-size: 14px;
+    color: white;
+    transform: translateY(18px);
+}
+
+
